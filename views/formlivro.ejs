@@ -1,0 +1,19 @@
+<!-- este arquivo possui a extesão ejs e fica no diretorio/pasta: views -->
+<!-- o method="post" especifíca o formato de envio da requisição do formulário -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário POST</title>
+  </head>
+  <body>
+    <%- include('menu') %>
+    <h1>Formulário Livro POST</h1>
+    <form action="/formpost" method="post">
+      <label for="titulo">Título:</label>
+      <input type="text" id="titulo" name="titulo" required /><p/>
+      <label for="autor">Autor:</label>
+      <input type="text" id="autor" name="autor" required /><p/>
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

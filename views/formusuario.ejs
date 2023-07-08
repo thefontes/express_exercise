@@ -1,0 +1,25 @@
+<!-- este arquivo possui a extesão ejs e fica no diretorio/pasta: views -->
+<!-- o method="get" especifíca o formato de envio da requisição do formulário -->
+<!-- com este tipo de método também é possível criar links/urls para solicitações -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário Usuario GET</title>
+  </head>
+  <body>
+    <%- include('menu') %>
+    <h1>Formulário Usuário GET</h1>
+    <form action="/formget" method="get">
+      <label for="usuario">Usuário:</label>
+      <input type="text" id="usuario" name="usuario" required /><p>
+      <label for="senha">Senha:</label>
+      <input type="password" id="senha" name="senha" required /><p>
+      <input type="submit" value="Enviar" />
+    </form>
+    <p>
+      <a href="/formget?usuario=fulano&senha=123">
+        GET Via Link: usuario Fulano senha: 123
+      </a>
+    </p>
+  </body>
+</html>

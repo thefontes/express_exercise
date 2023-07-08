@@ -1,0 +1,21 @@
+<!-- 6.1 a propriedade enctype="application/json" define para o JSON o formato 
+de codificação do formulário  a ser enviados para o servidor -->
+
+<!-- este arquivo possui a extesão ejs e fica no diretorio/pasta: views -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Formulário JSON POST</title>
+  </head>
+  <body>
+    <%- include('menu') %>
+    <h1>Formulário JSON POST</h1>
+    <form action="/json" method="post" enctype="application/json">
+      <label for="titulo">Chave1:</label>
+      <input type="text" id="chave1" name="chave1" required placeholder='valor1'/><p/>
+      <label for="autor">Chave2:</label>
+      <input type="text" id="chave2" name="chave2" required placeholder='valor2'/><p/>
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+<!-- 4.1 Crie o arquivo formgetresposta.ejs -->
+<!-- este arquivo possui a extesão ejs e fica no diretorio/pasta: views -->
+<!DOCTYPE html>
+<html>
+  <body>
+    <%- include('menu') %>
+    <h1> Dados Recebidos! </h1>
+    <!-- 4.2 local onde o nome do 'usuario'será exibido -->
+      <p> Seja bem vindo: <%= pessoa.usuario %>  </p>  
+      <p> <a href="/"> Voltar</a> </p>
+  </body>
+</html>
