@@ -13,7 +13,6 @@ app.listen(porta, () => {
 app.get('/usuario', function (requisicao, resposta){
     resposta.render("formusuario");
 });
-
 app.get('/formget', function (requisicao, resposta){
     const usuario = requisicao.query.usuario;
     const senha = requisicao.query.senha;
