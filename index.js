@@ -1,5 +1,4 @@
-const express = require('express')
-const {json} = require("express");
+const express = require('express');
 const app = express();
 const porta = 3000;
 
@@ -13,7 +12,6 @@ app.listen(porta, () => {
 app.get('/usuario', function (requisicao, resposta){
     resposta.render("formusuario");
 });
-
 app.get('/formget', function (requisicao, resposta){
     const usuario = requisicao.query.usuario;
     const senha = requisicao.query.senha;
